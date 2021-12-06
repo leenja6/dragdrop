@@ -1,0 +1,35 @@
+.search {
+  margin-top: 15px;
+  margin-bottom: 19px;
+  max-width: 564px;
+  position: relative;
+
+  input {
+    width: calc(100% - 28px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #bfc9e0;
+    height: 29px;
+    padding-left: 28px;
+    background: url(../assets/img/lupa.svg) left center no-repeat;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8e9cbb;
+    outline: none;
+    padding-bottom: 4px;
+  }
+
+  &__close {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -6px;
+    background: url(../assets/img/close.svg) no-repeat;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,73 @@
+.btn {
+  padding: 9px 10px 9px 10px;
+  border: 1px solid #d3d8df;
+  width: max-content;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 13px;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+  margin-right: 6px;
+
+  .btn__icon {
+    display: block;
+  }
+
+  .btn__icon.plus {
+    width: 14px;
+    height: 14px;
+    background: url(../assets/img/plus.svg);
+    margin-right: 10px;
+  }
+
+  .btn__icon.bookmark {
+    width: 13px;
+    height: 15px;
+    background: url(../assets/img/Vector.svg) center center no-repeat;
+  }
+
+  .edit {
+    width: 15px;
+    height: 16px;
+    display: block;
+    background: url(../assets/img/edit.svg) center center no-repeat;
+  }
+  .delete {
+    width: 15px;
+    height: 16px;
+    display: block;
+    background: url(../assets/img/delete.svg) center center no-repeat;
+  }
+  .revers {
+    width: 15px;
+    height: 16px;
+    display: block;
+    background: url(../assets/img/revers.svg) center center no-repeat;
+  }
+}
+
+.btn.icon-pd-n {
+  padding: 0;
+  border: none;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.icon-circle {
+  border-radius: 50%;
+}
+
+.icon-title {
+  border-radius: 50px;
+}
+
+.ghost .revers {
+  width: 15px;
+  height: 16px;
+  display: block;
+  background: url(../assets/img/reversh.svg) center center no-repeat;
+}

@@ -1,0 +1,95 @@
+.accordion {
+  margin-bottom: 14px;
+
+  &__item {
+    .list {
+      margin-left: 16px;
+      max-height: 0;
+      transition: all 0.3s ease-out;
+      overflow: hidden;
+      opacity: 0;
+    }
+
+    .list.active {
+      max-height: 1000px;
+      opacity: 1;
+      transition: all 0.3s ease-out;
+    }
+  }
+  &__section.ghost {
+    box-shadow: 0px 3px 16px rgba(0, 102, 255, 0.7);
+    z-index: 10;
+  }
+  &__section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 16px 0px 16px;
+    border: 1px solid #dfe4ef;
+    height: 51px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-top: -1px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+
+    .content__btn {
+      height: 41px;
+    }
+  }
+
+  &__item [style~='0.2'] ul {
+    opacity: 0.2;
+  }
+
+  &__box#active {
+    span {
+      pointer-events: none;
+    }
+
+    p {
+      pointer-events: none;
+    }
+
+    div {
+      pointer-events: none;
+    }
+  }
+
+  &__section.active {
+    .accordion__icon {
+      transform: rotate(180deg);
+      transition: all 0.4s linear;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #d3d8df;
+    border-radius: 0;
+    background: url(../assets/img/next.svg) center center no-repeat;
+    margin-right: 14px;
+    border-radius: 50%;
+    transition: all 0.4s linear;
+  }
+
+  &__icon.next {
+    transform: rotate(270deg) translateX(-1px) translateY(-1px) !important;
+  }
+}
+
+.accordion__ghost {
+  pointer-events: none;
+  width: 1160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
